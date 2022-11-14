@@ -54,13 +54,11 @@
 		s = document.createElement('script');
 		s.setAttribute('src', 'https://ncuedu--mstqacb.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
+			console.log('hello inside init');
 			initESW(null);
 		};
 		document.body.appendChild(s);
 	} else {
 		initESW('https://service.force.com');
-	}
-	s.onclick=function() {
-		console.log('hello');
 	}
 </script>
